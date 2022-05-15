@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './dashboard.css'
 import axios from 'axios'
-import { Badge, Button } from '@chakra-ui/react'
+import { Badge, Button, Divider } from '@chakra-ui/react'
 
 const Details = () => {
     const [data ,setdata] = useState(null);
@@ -29,7 +29,7 @@ const Details = () => {
                     <Button colorScheme='gray' size='sm'>View</Button>
                     </div>
                   </div>
-                  <hr />
+                  <Divider />
                   <p className="box1-status">{data.status}</p>
                 </div>
               );
