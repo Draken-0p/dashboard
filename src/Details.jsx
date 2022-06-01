@@ -5,6 +5,7 @@ import { Badge, Button, Divider } from '@chakra-ui/react'
 
 const Details = () => {
     const [data ,setdata] = useState(null);
+    const [d ,setd] = useState(null);
     const fetchdata = async() =>{
       const {data} = await axios.get("/api")
    
